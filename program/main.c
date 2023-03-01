@@ -13,9 +13,16 @@ int main(int ac, char **av, char **env)
     my_putstr("Press the KEY to start !\n");
 
     init_wiringpi();
+
+    unsigned long *data = malloc(sizeof(int) * 1000);
+
     while (1) {
-        my_putnbr(read_humidity());
+        for (int i = 0; i < 1000; i++)
+            data[i] = read_humidity();
+        bubble(data, 1000);
+        my_putnbr(data[500]);
         my_putchar('\n');
     }
+    free(data);
     return 0;
 }
