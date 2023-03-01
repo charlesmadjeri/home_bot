@@ -51,5 +51,6 @@
     void brake(void);
     void init_wiringpi(void);
     void bubble(unsigned long *a, int n);
+    int read_humidity(void);
 
 #endif /* !HOME_BOT_H_ */

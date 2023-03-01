@@ -13,9 +13,9 @@ int main(int ac, char **av, char **env)
     my_putstr("Press the KEY to start !\n");
 
     init_wiringpi();
-
     while (1) {
-        go(MOTOR_SPEED);
+        my_putnbr(read_humidity());
+        my_putchar('\n');
     }
     return 0;
 }

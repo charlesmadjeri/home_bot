@@ -23,5 +23,6 @@ void init_wiringpi(void)
     pinMode(LED_G, OUTPUT);
     pinMode(LED_B, OUTPUT);
 
+    softPwmCreate(SENSOR, 0, 100);
     softPwmCreate(MOTOR_PWM, 0, 100);
 }

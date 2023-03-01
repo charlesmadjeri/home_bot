@@ -43,6 +43,7 @@ SOURCES_FILES	=	program/main.c \
 					program/gpio.c \
 					program/keyscan.c \
 					program/motor.c \
+					program/capacitive_sensor.c \
 
 LIBRARY		=	lib/my_getnbr.c \
 				lib/my_putchar.c \
