@@ -26,7 +26,7 @@
     #define MOTOR_BACK 25
     #define MOTOR_PWM 23
     #define MOTOR_SPEED 100
-    #define SENSOR 8
+    #define SENSOR 1
     #define KEY 10
     #define LED_R 3
     #define LED_G 2
