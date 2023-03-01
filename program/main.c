@@ -15,9 +15,7 @@ int main(int ac, char **av, char **env)
     init_wiringpi();
 
     while (1) {
-        my_putstr("H = ");
-        my_putnbr(digitalRead(SENSOR));
-        my_putchar('\n');
+        go(MOTOR_SPEED);
     }
     return 0;
 }
